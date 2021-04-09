@@ -1,0 +1,112 @@
+@import "tools";
+article {
+  width: 100%;
+  padding: 0 5%;
+  .tools {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    h2 {
+      @include h-first-mobile;
+      margin-bottom: 16px;
+    }
+    h3 {
+      @include h-second-mobile;
+      color: $font-color-third;
+    }
+    p {
+      @include paragraph;
+      color:  $font-color-third;
+      margin-bottom: 32px;
+      text-align: justify;
+    }
+    .tools-description{
+      .tools-description-item {
+        .fas {
+          font-size: 100px;
+          margin-bottom: 20px;
+        }
+        .fa-clipboard {
+          color: $info-bg-third;
+        }
+        .fa-user-astronaut {
+          color: $info-bg-first-color;
+        }
+        .fa-user-secret {
+          color: $info-bg-fourth;
+        }
+        h2 {
+          @include h-third;
+          text-transform: none;
+        }
+        p{
+          @include paragraph-small;
+        }
+      }
+    }
+    .get-started {
+      @include btn;
+      background-color:  $btn-sub-color;
+      color:  $font-color-main;
+      padding: 20px 25px;
+    }
+  }
+}
+
+
+//for tablet landscape up
+@media all and (min-width:900px) {
+  article {
+    .tools {
+      p {
+        width: 60%;
+        margin: 0 auto 80px;
+        text-align: center;
+      }
+      .tools-description {
+        display: flex;
+        .tools-description-item {
+          padding: 10px;
+          .fas {
+            margin-bottom: 40px;
+          }
+          p {
+            width: 100%;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
+
+//for desktop up
+@media all and (min-width:1200px) {
+  article {
+    .tools {
+      padding: 100px 0;
+      h2 {
+        @include h-secondary;
+      }
+      p{
+        @include paragraph;
+        width: 40%;
+      }
+      .tools-description {
+        .tools-description-item {
+          p {
+            width: 70%;
+            text-align: center;
+          }
+        }
+      }
+      input:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//for big desktop up
+@media all and (min-width:1800px) {
+}

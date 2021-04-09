@@ -1,3 +1,125 @@
+article {
+  width: 100%;
+  padding: 0 5%
+}
+article .tools {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0
+}
+article .tools h2 {
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: Raleway,sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 16px
+}
+article .tools h3 {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  font-family: Raleway,sans-serif;
+  color: #78909c
+}
+article .tools p {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: Raleway,sans-serif;
+  color: #78909c;
+  margin-bottom: 32px;
+  text-align: justify
+}
+article .tools .tools-description .tools-description-item .fas {
+  font-size: 100px;
+  margin-bottom: 20px
+}
+article .tools .tools-description .tools-description-item .fa-clipboard {
+  color: #b388ff
+}
+article .tools .tools-description .tools-description-item .fa-user-astronaut {
+  color: #80d8ff
+}
+article .tools .tools-description .tools-description-item .fa-user-secret {
+  color: #ea80fc
+}
+article .tools .tools-description .tools-description-item h2 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  font-family: Raleway,sans-serif;
+  text-transform: none
+}
+article .tools .tools-description .tools-description-item p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Raleway,sans-serif
+}
+article .tools .get-started {
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
+  border: none;
+  border-radius: 5px;
+  font-family: Raleway,sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: 0;
+  -webkit-appearance: none;
+  background-color: #1de9b6;
+  color: #fff;
+  padding: 20px 25px
+}
+@media all and (min-width:900px) {
+  article .tools p {
+    width: 60%;
+    margin: 0 auto 80px;
+    text-align: center
+  }
+  article .tools .tools-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+  }
+  article .tools .tools-description .tools-description-item {
+    padding: 10px
+  }
+  article .tools .tools-description .tools-description-item .fas {
+    margin-bottom: 40px
+  }
+  article .tools .tools-description .tools-description-item p {
+    width: 100%;
+    text-align: justify
+  }
+}
+@media all and (min-width:1200px) {
+  article .tools {
+    padding: 100px 0
+  }
+  article .tools h2 {
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: 600;
+    font-family: Raleway,sans-serif
+  }
+  article .tools p {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: Raleway,sans-serif;
+    width: 40%
+  }
+  article .tools .tools-description .tools-description-item p {
+    width: 70%;
+    text-align: center
+  }
+  article .tools input:hover {
+    cursor: pointer
+  }
+}
 header {
   padding: 45px 5%;
   background-image: -o-linear-gradient(143deg,#00b8d4 -11%,#1de9b6 111%);
