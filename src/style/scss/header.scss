@@ -1,0 +1,175 @@
+@import "tools";
+
+header {
+  padding: 45px 5%;
+  @include bg-gradient;
+  nav {
+    display: flex;
+    align-items: center;
+    .brand {
+      flex-basis: 70%;
+    }
+    .navigation {
+      display: none;
+    }
+    .login {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: flex-end;
+      .login-btn {
+        @include login-btn;
+        background: none;
+        color:  $font-color-main;
+        outline: none;
+        padding: 5px 15px;
+        &:hover {
+          background-color: $btn-main-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .info-side {
+    width: 100%;
+    text-align: center;
+    padding: 32px 0 16px;
+    h1 {
+      @include h-first-mobile;
+      color:  $font-color-main;
+
+    }
+    p {
+      @include p-main;
+      color:  $font-color-main;
+      text-align: justify;
+    }
+    .buy-btn {
+      @include btn;
+      background-color:  $btn-main-color;
+      color:  $font-color-main;
+      padding: 20px 20px;
+      margin-top: 16px;
+    }
+    .try-free-btn {
+      @include  btn;
+      background-color:  $btn-wht;
+      color: $font-color-second;
+      padding: 20px 30px;
+      margin-top: 16px;
+    }
+  }
+  .video-side {
+    padding: 16px 0;
+    iframe {
+     width: 100%;
+
+    }
+  }
+}
+
+@media all and (min-width: 600px){
+  header {
+    .info-side {
+      text-align: left;
+    }
+  }
+}
+
+//for tablet landscape up
+@media all and (min-width:900px) {
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(-53.0deg, rgba(0, 184, 212, 0.8) -11%, rgba(29, 233, 182, 0.8) 111%),
+  url("../../img/color_fill_1_278.png");
+  background-size: cover;
+  nav {
+    flex-basis: 100%;
+    margin-bottom: 100px;
+    .brand {
+      flex-basis: 20%;
+      .brand-logo {
+        width: 15%;
+      }
+      .brand-name {
+        width: 70%;
+      }
+    }
+    .navigation {
+      flex-basis: 40%;
+      display: flex;
+      justify-content: space-around;
+      margin: auto;
+      list-style-type: none;
+      .navigation-item-link {
+        text-decoration: none;
+        color:  $font-color-main;
+        @include navigation;
+      }
+    }
+    .login {
+      flex-basis: 20%;
+    }
+  }
+  .info-side {
+    flex-basis: 50%;
+    padding-right: 18px;
+    p{
+      line-height: 1.2;
+    }
+  }
+  .video-side {
+    flex-basis: 50%;
+  }
+}
+
+}
+
+//for desktop up
+@media all and (min-width:1200px) {
+  header {
+    padding-bottom: 150px;
+    nav {
+      .brand {
+        flex-basis: 15%;
+      }
+      .navigation {
+        .navigation-item-link {
+          &:hover {
+            cursor: pointer;
+            color:  $font-color-second;
+          }
+        }
+      }
+      .login {
+        flex-basis: 15%;
+      }
+    }
+    .info-side {
+      flex-basis: 40%;
+      h1 {
+        @include h-main;
+      }
+      p {
+        @include p-main;
+        text-align: left;
+      }
+      input:hover {
+        cursor: pointer;
+      }
+    }
+    .video-side {
+      flex-basis: 60%;
+      display: flex;
+      justify-content: flex-end;
+      iframe {
+        width: 80%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+//for big desktop up
+@media all and (min-width:1800px) {
+}
