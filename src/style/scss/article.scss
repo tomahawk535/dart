@@ -1,11 +1,11 @@
 @import "tools";
 article {
   width: 100%;
-  padding: 0 5%;
+  padding: 0;
   .tools {
     width: 100%;
     text-align: center;
-    padding: 50px 0;
+    padding: 50px 5%;
     h2 {
       @include h-first-mobile;
       margin-bottom: 16px;
@@ -49,6 +49,64 @@ article {
       background-color:  $btn-sub-color;
       color:  $font-color-main;
       padding: 20px 25px;
+    }
+  }
+  .benefits {
+    width: 100%;
+    margin-bottom: 100px;
+    .benefits-inner{
+      display: flex;
+      flex-wrap: wrap;
+      .benefits-item {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        background-color: #00b8d4;
+        .benefits-img {
+          display: flex;
+          align-self: center;
+          width: 60px;
+          height: 60px;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: white;
+          margin-bottom: 16px;
+          .fas {
+            font-size: 30px;
+            align-self: center;
+
+          }
+        }
+        .benefits-number, .benefits-title {
+          align-self: center;
+        }
+      }
+
+      .business {
+        background-color: $info-bg-first-color;
+        .fas {
+          color: $info-bg-first-color;
+        }
+      }
+      .downloads {
+       background-color:  $info-bg-second-color;
+        .fas {
+          color: $info-bg-second-color;
+        }
+      }
+      .installs {
+        background-color:  $info-bg-third;
+        .fas {
+          color: $info-bg-third;
+        }
+      }
+      .users {
+        background-color:  $info-bg-fourth;
+        .fas {
+          color: $info-bg-fourth;
+        }
+      }
     }
   }
 }

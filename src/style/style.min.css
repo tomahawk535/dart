@@ -1,11 +1,11 @@
 article {
   width: 100%;
-  padding: 0 5%
+  padding: 0
 }
 article .tools {
   width: 100%;
   text-align: center;
-  padding: 50px 0
+  padding: 50px 5%
 }
 article .tools h2 {
   font-size: 35px;
@@ -72,6 +72,82 @@ article .tools .get-started {
   background-color: #1de9b6;
   color: #fff;
   padding: 20px 25px
+}
+article .benefits {
+  width: 100%;
+  margin-bottom: 100px
+}
+article .benefits .benefits-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+article .benefits .benefits-inner .benefits-item {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #00b8d4
+}
+article .benefits .benefits-inner .benefits-item .benefits-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  width: 60px;
+  height: 60px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 16px
+}
+article .benefits .benefits-inner .benefits-item .benefits-img .fas {
+  font-size: 30px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center
+}
+article .benefits .benefits-inner .benefits-item .benefits-number,
+article .benefits .benefits-inner .benefits-item .benefits-title {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center
+}
+article .benefits .benefits-inner .business {
+  background-color: #80d8ff
+}
+article .benefits .benefits-inner .business .fas {
+  color: #80d8ff
+}
+article .benefits .benefits-inner .downloads {
+  background-color: #82b1ff
+}
+article .benefits .benefits-inner .downloads .fas {
+  color: #82b1ff
+}
+article .benefits .benefits-inner .installs {
+  background-color: #b388ff
+}
+article .benefits .benefits-inner .installs .fas {
+  color: #b388ff
+}
+article .benefits .benefits-inner .users {
+  background-color: #ea80fc
+}
+article .benefits .benefits-inner .users .fas {
+  color: #ea80fc
 }
 @media all and (min-width:900px) {
   article .tools p {
