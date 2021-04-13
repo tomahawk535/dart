@@ -9,7 +9,7 @@ $(document).ready(function () {
         var w_height = $(window).height(); // Высота окна браузера
         var d_height = $(document).height(); // Высота всего документа
         var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-        if (w_top + 700 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+        if (w_top + 550 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
             $('.benefits-number').css('opacity', '1');
             $('.benefits-number').spincrement({
                 thousandSeparator: "",
