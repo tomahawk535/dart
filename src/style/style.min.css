@@ -75,8 +75,7 @@ article .tools .get-started {
   padding: 20px 25px
 }
 article .benefits {
-  width: 100%;
-  margin-bottom: 100px
+  width: 100%
 }
 article .benefits .benefits-inner {
   display: -webkit-box;
@@ -158,6 +157,82 @@ article .benefits .benefits-inner .users {
 article .benefits .benefits-inner .users .fas {
   color: #ea80fc
 }
+article .services {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 45px 5%
+}
+article .services .services-title {
+  font-size: 45px;
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: Raleway,sans-serif;
+  text-align: center
+}
+article .services .services-description {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: Raleway,sans-serif;
+  color: #78909c;
+  text-align: justify;
+  margin: 20px 0 40px
+}
+article .services br {
+  display: none
+}
+article .services .services-item {
+  width: 100%;
+  padding-bottom: 20px
+}
+article .services .services-item .services-item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px
+}
+article .services .services-item .services-item-header:hover {
+  cursor: pointer
+}
+article .services .services-item .services-item-header .services-item-title {
+  text-transform: uppercase;
+  margin: 0 10px
+}
+article .services .services-item .services-item-header .services-item-toggle {
+  margin-left: auto
+}
+article .services .services-item .services-item-content {
+  display: none
+}
+article .services .services-item .services-item-content .services-item-img {
+  width: 100%
+}
+article .services .services-item .services-item-content .services-item-description {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Raleway,sans-serif;
+  color: #061e37;
+  text-align: justify
+}
+@media all and (min-width:600px) {
+  article .services .services-item .services-item-content {
+    display: none
+  }
+  article .services .services-item .services-item-content .services-item-description {
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+    padding: 10px
+  }
+  article .services .services-item .services-item-content .services-item-img {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%
+  }
+}
 @media all and (min-width:900px) {
   article .tools p {
     width: 60%;
@@ -183,6 +258,12 @@ article .benefits .benefits-inner .users .fas {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%
   }
+  article .services .services-description {
+    text-align: center
+  }
+  article .services br {
+    display: block
+  }
 }
 @media all and (min-width:1200px) {
   article .tools {
@@ -207,6 +288,9 @@ article .benefits .benefits-inner .users .fas {
   }
   article .tools input:hover {
     cursor: pointer
+  }
+  article .services {
+    padding: 90px 5%
   }
 }
 header {

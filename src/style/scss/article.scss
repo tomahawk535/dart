@@ -54,7 +54,6 @@ article {
   }
   .benefits {
     width: 100%;
-    margin-bottom: 100px;
     .benefits-inner{
       display: flex;
       flex-wrap: wrap;
@@ -115,9 +114,78 @@ article {
       }
     }
   }
+  .services {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 45px 5%;
+    .services-title {
+      @include h-secondary;
+      text-align: center;
+    }
+    .services-description {
+      @include paragraph;
+      color:  $font-color-third;
+      text-align: justify;
+      margin: 20px 0 40px;
+    }
+    br {
+      display: none;
+    }
+    .services-item {
+      width: 100%;
+      padding-bottom: 20px;
+      .services-item-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        &:hover {
+          cursor: pointer;
+        }
+        .services-item-title {
+          text-transform: uppercase;
+          margin: 0 10px;
+        }
+        .services-item-toggle {
+          margin-left: auto;
+        }
+      }
+      .services-item-content {
+        display: none;
+        .services-item-img {
+          width: 100%;
+        }
+        .services-item-description {
+          @include paragraph-small;
+          color:  $font-color-fourth;
+          text-align: justify;
+
+        }
+      }
+    }
+  }
 }
 
 
+// for tablet portrait up
+@media all and (min-width:600px) {
+  article {
+    .services {
+      .services-item {
+        .services-item-content {
+          display: none;
+          .services-item-description{
+            flex-basis: 60%;
+            padding: 10px;
+          }
+          .services-item-img {
+            flex-basis: 40%;
+          }
+        }
+      }
+    }
+  }
+}
 //for tablet landscape up
 @media all and (min-width:900px) {
   article {
@@ -148,6 +216,14 @@ article {
         }
       }
     }
+    .services {
+      .services-description {
+        text-align: center;
+      }
+      br {
+        display: block;
+      }
+    }
   }
 }
 
@@ -174,6 +250,9 @@ article {
       input:hover {
         cursor: pointer;
       }
+    }
+    .services {
+      padding: 90px 5%;
     }
   }
 }
