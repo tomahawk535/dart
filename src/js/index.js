@@ -31,7 +31,7 @@ $(document).ready(function () {
     hideService();
     // переключение отображения сервисов
     function toggleServices () {
-        $(this).siblings('.services-item-content').toggle();
+        $(this).siblings('.services-item-content').slideToggle(300);
     }
     $('.services-item-header').click(toggleServices);
 
