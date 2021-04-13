@@ -32,8 +32,30 @@ $(document).ready(function () {
     // переключение отображения сервисов
     function toggleServices () {
         $(this).siblings('.services-item-content').slideToggle(300);
+        $(this).children('.services-item-toggle').toggleClass('fa-sort-down fa-sort-up');
     }
     $('.services-item-header').click(toggleServices);
 
+
+    // слайдер для коментариев
+    $('.response-slider').slick({
+        mobileFirst: true,
+        dots: false,
+        arrows: false,
+        slidesToShow: 2,
+        autoplay: true,
+        vertical: true,
+        verticalSwiping: true,
+        responsive: [{
+            breakpoint: 1200,
+                settings: {
+                    arrows: true,
+                    prevArrow: '<i class="fas fa-chevron-up"></i>',
+                    nextArrow: '<i class="fas fa-chevron-down"></i>',
+                    adaptiveHeight: true
+                }
+
+        }]
+    });
 
 });

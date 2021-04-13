@@ -163,6 +163,70 @@ article {
       }
     }
   }
+  .response {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 5%;
+    @include bg-gradient;
+    br {
+      display: none;
+    }
+    .response-content {
+      flex-basis: 100%;
+      padding-bottom: 15px;
+      .response-title {
+        @include h-first-mobile;
+        text-align: center;
+        color:  $font-color-main;
+        margin-bottom: 20px;
+      }
+      .response-description {
+        @include paragraph;
+        color:  $font-color-main;
+        text-align: justify;
+        margin-bottom: 35px;
+      }
+      .response-btn {
+        @include btn;
+        background-color: $btn-main-color;
+        color: $font-color-main;
+        padding: 15px 30px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .response-slide {
+      flex-basis: 100%;
+    }
+    .response-slider {
+      width: 90%;
+      margin: 0 auto;
+      .response-slider-item {
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        .response-slider-img {
+          flex-basis: 20%;
+          display: none;
+        }
+        .response-slider-description {
+          flex-basis: 100%;
+          padding: 16px;
+          background-color: $body-bg-color;
+          border-radius: 5px;
+          text-align: justify;
+          .slider-description-title {
+              @include h-fourth;
+          }
+          .slider-description-text {
+            @include paragraph;
+            color: $font-color-third;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -223,6 +287,39 @@ article {
         display: block;
       }
     }
+    .response {
+      .response-content {
+        flex-basis: 40%;
+        padding-top: 60px;
+        .response-title {
+          text-align: left;
+        }
+        .response-description {
+          margin-bottom: 70px;
+        }
+      }
+      .response-slider {
+        width:  55%;
+        .fa-chevron-up, .fa-chevron-down {
+          color: $font-color-main;
+          font-size: 20px;
+          position: relative;
+          left: 55%;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        .response-slider-item {
+          margin: 32.5px 0;
+         .response-slider-img {
+           display: flex;
+           flex-basis: 20%;
+           align-items: center;
+           justify-content: center;
+         }
+        }
+      }
+    }
   }
 }
 
@@ -253,7 +350,27 @@ article {
     .services {
       padding: 90px 5%;
     }
+    .response {
+      background-image: linear-gradient(-53.0deg, rgba(0, 184, 212, 0.8) -11%, rgba(29, 233, 182, 0.8) 111%),
+      url("../../img/response-bg.png");
+    }
   }
+}
+
+@media all and (min-width: 1500px) {
+  article{
+    .response {
+      br {
+        display: block;
+      }
+      .response-content {
+        .response-title {
+          @include h-secondary;
+        }
+      }
+    }
+  }
+
 }
 
 //for big desktop up
