@@ -1,6 +1,7 @@
 article {
   width: 100%;
-  padding: 0
+  padding: 0;
+  margin-bottom: 1000px
 }
 article .tools {
   width: 100%;
@@ -123,7 +124,15 @@ article .benefits .benefits-inner .benefits-item .benefits-number,
 article .benefits .benefits-inner .benefits-item .benefits-title {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
-  align-self: center
+  align-self: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  font-family: Raleway,sans-serif
+}
+article .benefits .benefits-inner .benefits-item .benefits-number {
+  opacity: 0
 }
 article .benefits .benefits-inner .business {
   background-color: #80d8ff
@@ -169,6 +178,10 @@ article .benefits .benefits-inner .users .fas {
   article .tools .tools-description .tools-description-item p {
     width: 100%;
     text-align: justify
+  }
+  article .benefits .benefits-inner .benefits-item {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%
   }
 }
 @media all and (min-width:1200px) {

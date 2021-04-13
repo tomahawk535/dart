@@ -2,6 +2,7 @@
 article {
   width: 100%;
   padding: 0;
+  margin-bottom: 1000px;
   .tools {
     width: 100%;
     text-align: center;
@@ -80,6 +81,11 @@ article {
         }
         .benefits-number, .benefits-title {
           align-self: center;
+          color:  $font-color-main;
+          @include h-third;
+        }
+        .benefits-number {
+          opacity: 0;
         }
       }
 
@@ -132,6 +138,13 @@ article {
             width: 100%;
             text-align: justify;
           }
+        }
+      }
+    }
+    .benefits {
+      .benefits-inner{
+        .benefits-item {
+          flex-basis: 25%;
         }
       }
     }
