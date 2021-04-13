@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    // анимация цифр
+
     var show = true;
     var countbox = ".benefits-inner";
     $(window).on("scroll load resize", function () {
@@ -20,5 +22,18 @@ $(document).ready(function () {
             show = false;
         }
     });
+
+    // отображеине сервисов по клику
+    // скрфтие сервисов по дефолту
+    function hideService  () {
+        $('.services-item-content').hide();
+    }
+    hideService();
+    // переключение отображения сервисов
+    function toggleServices () {
+        $(this).siblings('.services-item-content').toggle();
+    }
+    $('.services-item-header').click(toggleServices);
+
 
 });

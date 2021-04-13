@@ -173,7 +173,7 @@ article {
     .services {
       .services-item {
         .services-item-content {
-          display: none;
+          display: flex;
           .services-item-description{
             flex-basis: 60%;
             padding: 10px;

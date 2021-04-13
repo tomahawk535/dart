@@ -221,7 +221,9 @@ article .services .services-item .services-item-content .services-item-descripti
 }
 @media all and (min-width:600px) {
   article .services .services-item .services-item-content {
-    display: none
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
   }
   article .services .services-item .services-item-content .services-item-description {
     -ms-flex-preferred-size: 60%;
