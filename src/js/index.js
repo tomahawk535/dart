@@ -58,4 +58,14 @@ $(document).ready(function () {
         }]
     });
 
+
+    // вывод данных с формы в консоль
+   function getData(){
+       let data  = $('#feedback-form').serializeArray();
+       $.each(data, function(){
+           console.log(this.name+" = "+this.value)
+       });
+   }
+   $('.feedback-form-submit').click(getData);
+
 });
