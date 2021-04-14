@@ -1,7 +1,6 @@
 article {
   width: 100%;
-  padding: 0;
-  margin-bottom: 1000px
+  padding: 0
 }
 article .tools {
   width: 100%;
@@ -550,6 +549,210 @@ article .feedback .feedback-form .feedback-form-submit:hover {
     line-height: 1.2;
     font-weight: 600;
     font-family: Raleway,sans-serif
+  }
+}
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #061e37;
+  padding: 40px 5%
+}
+footer .brand,
+footer .social-ico {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%
+}
+footer .brand {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1
+}
+footer .brand .brand-logo {
+  width: 10%
+}
+footer .brand .brand-name {
+  width: 60%
+}
+footer .police {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+footer .police .police-item {
+  margin: 15px 10px;
+  color: #fff;
+  list-style-type: none;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center
+}
+footer .police .police-item:first-child {
+  list-style-type: none
+}
+footer .police .police-item .police-item-link {
+  text-decoration: none;
+  color: #78909c;
+  font-size: 15px
+}
+footer .navigation {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+footer .navigation .navigation-item {
+  list-style-type: none;
+  margin: 10px 5px
+}
+footer .navigation .navigation-item .navigation-item-link {
+  text-decoration: none;
+  color: #78909c;
+  font-size: 15px
+}
+footer .social-ico {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+footer .social-ico .social-ico-item {
+  list-style-type: none
+}
+footer .social-ico .social-ico-item .social-ico-link {
+  text-decoration: none;
+  color: #78909c;
+  font-size: 15px
+}
+@media all and (min-width:600px) {
+  footer .brand,
+  footer .social-ico {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+  footer .social-ico .social-ico-item {
+    margin: 15px
+  }
+  footer .brand {
+    text-align: center
+  }
+  footer .brand .brand-logo {
+    width: 4%
+  }
+  footer .brand .brand-name {
+    width: 20%
+  }
+}
+@media all and (min-width:1023px) {
+  footer .brand {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    text-align: left
+  }
+  footer .brand .brand-logo {
+    width: 5%
+  }
+  footer .brand .brand-name {
+    width: 30%
+  }
+  footer .navigation {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 0
+  }
+  footer .navigation .navigation-item .navigation-item-link {
+    color: #fff;
+    margin: 0 10px
+  }
+  footer .navigation .navigation-item .navigation-item-link:last-child {
+    margin-right: 0
+  }
+  footer .navigation .navigation-item .navigation-item-link:hover {
+    color: #78909c
+  }
+  footer .police {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+  }
+  footer .police .police-item {
+    list-style-type: disc;
+    margin: 10px 15px
+  }
+  footer .police .police-item:first-child {
+    list-style-type: none;
+    margin-left: 0
+  }
+  footer .police .police-item .police-item-link:hover {
+    cursor: pointer
+  }
+  footer .social-ico {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+  }
+}
+@media all and (min-width:1200px) {
+  footer .brand {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    text-align: left
+  }
+  footer .brand .brand-logo {
+    width: 4%
+  }
+  footer .brand .brand-name {
+    width: 19%
+  }
+  footer .navigation .navigation-item {
+    margin: 0 15px
+  }
+  footer .social-ico .social-ico-item {
+    margin: 15px 4px
   }
 }
 header {

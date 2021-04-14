@@ -1,0 +1,172 @@
+@import "tools";
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:  $footer-bg-color;
+  padding: 40px 5%;
+  .brand, .social-ico {
+    flex-basis: 50%;
+  }
+  .brand {
+    order: 1;
+    .brand-logo {
+      width: 10%;
+    }
+    .brand-name {
+      width: 60%;
+    }
+  }
+  .police {
+    order: 4;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    .police-item {
+      margin: 15px 10px;
+      color:  $font-color-main;
+      list-style-type: none;
+      align-self: center;
+      &:first-child {
+        list-style-type: none;
+      }
+      .police-item-link {
+        text-decoration: none;
+        color:  $font-color-third;
+        font-size: 15px;
+      }
+    }
+  }
+  .navigation {
+    order: 3;
+    flex-basis: 100%;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    .navigation-item {
+      list-style-type: none;
+      margin: 10px 5px;
+      .navigation-item-link {
+        text-decoration: none;
+        color:  $font-color-third;
+        font-size: 15px;
+      }
+    }
+  }
+  .social-ico {
+    order: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .social-ico-item {
+      list-style-type: none;
+      .social-ico-link {
+        text-decoration: none;
+        color:  $font-color-third;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media all and (min-width:600px) {
+  footer {
+    .brand, .social-ico {
+      flex-basis: 100%;
+      justify-content: center;
+    }
+    .social-ico {
+      .social-ico-item {
+        margin: 15px;
+      }
+    }
+    .brand {
+      text-align: center;
+      .brand-logo {
+        width: 4%;
+      }
+      .brand-name {
+        width: 20%;
+      }
+    }
+  }
+}
+@media all and (min-width:1023px) {
+  footer {
+    .brand {
+      flex-basis: 50%;
+      text-align: left;
+      .brand-logo {
+        width: 5%;
+      }
+      .brand-name {
+        width: 30%;
+      }
+    }
+    .navigation {
+      order: 2;
+      flex-basis: 50%;
+      justify-content: flex-end;
+      margin-top: 0;
+      .navigation-item {
+        .navigation-item-link {
+          color:  $font-color-main;
+          margin: 0 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+          &:hover {
+            color: $font-color-third;
+          }
+        }
+      }
+    }
+    .police {
+      order: 3;
+      flex-basis: 50%;
+      justify-content: flex-start;
+      .police-item {
+        list-style-type: disc;
+        margin: 10px 15px;
+        &:first-child {
+          list-style-type: none;
+          margin-left: 0;
+        }
+        .police-item-link {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .social-ico {
+      order: 4;
+      flex-basis: 50%;
+      justify-content: flex-end;
+    }
+  }
+}
+@media all and (min-width:1200px) {
+  footer {
+    .brand {
+      flex-basis: 50%;
+      text-align: left;
+      .brand-logo {
+        width: 4%;
+      }
+      .brand-name {
+        width: 19%;
+      }
+    }
+    .navigation {
+      .navigation-item {
+        margin: 0 15px;
+      }
+    }
+    .social-ico {
+      .social-ico-item {
+        margin: 15px 4px;
+      }
+    }
+  }
+}
