@@ -227,6 +227,56 @@ article {
       }
     }
   }
+  .feedback {
+    width: 100%;
+    padding: 25px 5% 50px;
+    background-color:  $contact-bg-color;
+    br {
+      display: none;
+    }
+    .feedback-title {
+      @include h-first-mobile;
+      color:  $font-color-second;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .feedback-description {
+      @include paragraph;
+      color: $font-color-second;
+      text-align: justify;
+    }
+    .feedback-form {
+      width: 100%;
+      max-width: 700px;
+      padding: 10px 0;
+      margin: 0 auto;
+      input, .customer-message {
+        width: 100%;
+        border: 1px solid $font-color-fourth;
+        border-radius: 5px;
+        padding: 15px;
+        font-family: $font;
+        font-size: 14px;
+        color:  $font-color-fourth;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        font-weight: bolder;
+        outline: none;
+        -webkit-appearance: none;
+      }
+      .customer-message {
+        height: 150px;
+      }
+      .feedback-form-submit {
+        background-color:  $btn-sub-color;
+        @include btn;
+        color:  $font-color-main;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
 
@@ -244,6 +294,19 @@ article {
           .services-item-img {
             flex-basis: 40%;
           }
+        }
+      }
+    }
+    .feedback {
+      .feedback-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        input {
+          flex-basis: 49%
+        }
+        .feedback-form-submit {
+          margin-left: auto;
         }
       }
     }
@@ -320,6 +383,19 @@ article {
         }
       }
     }
+    .feedback {
+      padding: 45px 5% 100px;
+      br {
+        display: block;
+      }
+      .feedback-title {
+        @include h-secondary;
+      }
+      .feedback-description {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
   }
 }
 
@@ -353,6 +429,13 @@ article {
     .response {
       background-image: linear-gradient(-53.0deg, rgba(0, 184, 212, 0.8) -11%, rgba(29, 233, 182, 0.8) 111%),
       url("../../img/response-bg.png");
+    }
+    .feedback {
+      .feedback-form {
+        .feedback-form-submit {
+          flex-basis: 25%;
+        }
+      }
     }
   }
 }
